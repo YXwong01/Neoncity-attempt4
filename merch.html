@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>NeonCityNFT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="merch">
+      <!-----------------NAV tab end--------------------------------------------->
+      <nav>
+        <div class="header-logo">
+          <a href=""><img src="img/neoncitylogo.png" /></a>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"
+            ><img src="img/cross.png" alt=""
+          /></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="merch.html">Merch</a></li>
+          </ul>
+        </div>
+        <div class="social-link">
+          <a href="https://discord.gg/gWmaCSVu2v"
+            ><img src="img/discord.png" alt="dis"
+          /></a>
+          <a href="https://twitter.com/NFTNeonCity"
+            ><img src="img/twitter.png" alt="twitter"
+          /></a>
+          <a href="https://instagram.com/neoncitynft?utm_medium=copy_link"
+            ><img src="img/instagram.png" alt="instagram"
+          /></a>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"
+          ><img src="img/menu.png" alt=""
+        /></i>
+      </nav>
+      <!-----------------NAV tab end-------------------------------------------->
+      <div class="merch-title">
+        <h2>Our Merch</h2>
+        <div class="merch-content">
+          <h3>Coming Soon</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-----------------------footer start---------------------------------->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum provident
+        debitis veritatis eligendi laborum.
+      </p>
+      <div class="icon">
+        <img src="img/discord.png" alt="" />
+        <img src="img/twitter.png" alt="" />
+        <img src="img/facebook.png" alt="" />
+        <img src="img/instagram.png" alt="" />
+      </div>
+    </section>
+
+    <!--------JavaScript for Toggle Menu------->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
